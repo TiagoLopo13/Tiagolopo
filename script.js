@@ -4,6 +4,7 @@ const bttSomar = document.getElementById("bttSomar");
 const bttsubtrair = document.getElementById("bttsubtrair")
 const bttmultiplicar = document.getElementById("bttmultiplicar")
 const bttsdividir = document.getElementById("bttdividir")
+const bttslimpar = document.getElementById("bttlimpar")
 const resultado = document.getElementById("Resultado")
 
 bttSomar.addEventListener('click',() => {
@@ -36,6 +37,12 @@ bttsdividir.addEventListener('click', () => {
 
 resultado.textContent = `${a} / ${b} = ${dividir}`;
 })
+bttslimpar.addEventListener('click', () => {
+  numero1.value="";
+  numero2.value="";
+resultado.textContent = "";
+})
+
 
 // Copiar para o final do ficheiro script.js 
 
